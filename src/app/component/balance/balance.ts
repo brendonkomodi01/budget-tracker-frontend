@@ -31,7 +31,7 @@ export class BalanceComponent implements OnInit {
   }
 
   save(): void {
-    this.balanceService.setBalance(this.selectedYear, this.selectedMonth, this.newAmount).subscribe({
+    this.balanceService.setBalance(this.selectedYear, this.selectedMonth, this.newAmount ?? 0).subscribe({
       next: () => {
         this.successMessage = 'Balance saved successfully!';
         this.loadBalances();
