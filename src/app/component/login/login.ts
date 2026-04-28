@@ -4,7 +4,8 @@ import { AuthService } from '../../service/auth';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.html'
+  templateUrl: './login.html',
+  standalone: false
 })
 export class LoginComponent {
 
