@@ -11,7 +11,7 @@ export class BalanceComponent implements OnInit {
   balances: any[] = [];
   selectedYear: number = new Date().getFullYear();
   selectedMonth: number = new Date().getMonth() + 1;
-  newAmount: number = 0;
+  newAmount: number | null = null;
   successMessage: string = '';
 
   years: number[] = [2023, 2024, 2025, 2026];

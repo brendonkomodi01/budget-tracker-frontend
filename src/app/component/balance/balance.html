@@ -21,7 +21,8 @@
     </div>
     <div class="mb-3">
       <label class="form-label">Starting balance</label>
-      <input type="number" class="form-control" [(ngModel)]="newAmount" />
+      <input type="number" class="form-control" [(ngModel)]="newAmount"
+             (focus)="newAmount === 0 ? newAmount = null! : null" placeholder="Enter amount" />
     </div>
     <button class="btn btn-success" (click)="save()">Save</button>
   </div>
